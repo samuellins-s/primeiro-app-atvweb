@@ -2,6 +2,9 @@
     <label for="nome">Digite seu nome</label>
     <input id="nome" name="nome" type="text"
         #nome (keyup)="alterarMensagem(nome.value)">
+    <input type="button"
+    (click)="limpar()"
+    value="Limpar">
 </form>
 <div class="msg">
     <p>{{mensagem}}</p>
