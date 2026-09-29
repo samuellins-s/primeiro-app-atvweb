@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './exibe-mensagem.html',
 })
 export class ExibeMensagem {
-  mensagem: string
-  constructor() {
-    this.mensagem = ''
-  }
+    mensagem: string = ''
+
   alterarMensagem(nome: string) {
     this.mensagem = `Seja bem-vindo, ${nome}!`;
+  }
+
+  limpar() {
+    this.mensagem = ''
   }
 }
